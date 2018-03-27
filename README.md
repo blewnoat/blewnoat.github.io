@@ -1,6 +1,6 @@
 # blewnoat.github.io
-
-<details><summary>[note_to_frequency](https://github.com/blewnoat/note_to_frequency)</summary>
+[note_to_frequency](https://github.com/blewnoat/note_to_frequency) 
+- <details><summary>Convert notes values to frequencies</summary>
   Convert a note value to a frequency.
 </details>
 
