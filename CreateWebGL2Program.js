@@ -9,8 +9,8 @@ function CreateProgram(gl, source_a, source_b) {
     if(source_b) source += source_b;
     let v = '#version 300 es';
     let parts = source.split(v);
-    let vertexShader = CompileShader(v+parts[1],gl.VERTEX_SHADER);
-    let fragmentShader = CompileShader(v+parts[2],gl.FRAGMENT_SHADER);
+    let vertexShader = CompileShader(gl, v+parts[1],gl.VERTEX_SHADER);
+    let fragmentShader = CompileShader(gl, v+parts[2],gl.FRAGMENT_SHADER);
     let program = gl.createProgram();
     gl.attachShader(program, vertexShader);
     gl.attachShader(program, fragmentShader);
